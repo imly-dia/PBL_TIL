@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Pretendard', sans-serif; 
+    background-color: #fbc8e1; 
+    color: #333; 
+    line-height: 1.6; 
+    padding: 60px 20px; 
+}
+
+.wrapper {
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column; /
+    gap: 40px;
+}
+
+.summary-card {
+    background-color: #ffffff; 
+    padding: 40px; 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    border: 1px solid #eee;
+}
+
+.profile-img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+}
+
+.part-tag {
+    background-color: #fff0e6;
+    color: #ff6b00; 
+    padding: 4px 12px; 
+    font-weight: 700; 
+}
+
+.section-title {
+    border-bottom: 2px solid #ff6b00; 
+    display: inline-block; 
+}
+
+.tech-stack li::before {
+    content: "•"; 
+    color: #ff6b00; /* 점의 색상을 주황색으로 바꿉니다. */
+}
+
+.resolution {
+    border-left: 4px solid #ff6b00; 
+    background-color: #fff9f5; 
+}
+
+
+@media (max-width: 500px) {
+    .summary-card {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
