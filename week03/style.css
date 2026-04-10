@@ -1,0 +1,166 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    background-color: #ffeef2;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.dashboard-container {
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.main-title, .sub-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff4d7d; 
+}
+
+
+.summary-section {
+    margin-bottom: 60px;
+}
+
+.card-grid {
+    display: grid; 
+    gap: 20px; 
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+@media (min-width: 600px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/
+.member-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.my-card {
+    border: 3px solid #ff4d7d;
+    background-color: #fff9fa;
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(255, 77, 125, 0.2);
+}
+
+
+.image-wrapper {
+    position: relative; /* 배지의 기준점이 될 부모 상자 */
+    margin-bottom: 15px;
+}
+
+.tech-badge {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    background-color: #ff4d7d;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover; 
+    border-radius: 12px;
+}
+
+.card-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.part-tag {
+    display: inline-block;
+    background: #fff0f3;
+    color: #ff4d7d;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-one-line {
+    font-size: 14px;
+    color: #666;
+}
+
+.detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detail-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 10px solid #ff4d7d;
+}
+
+.detail-header {
+    margin-bottom: 15px;
+}
+
+.detail-part {
+    color: #888;
+    font-size: 14px;
+}
+
+.detail-intro {
+    margin-bottom: 20px;
+}
+
+.detail-tech {
+    list-style: none; 
+    margin-bottom: 20px;
+}
+
+.detail-tech li::before {
+    content: "🌸"; 
+    margin-right: 10px;
+}
+
+.detail-contact {
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.detail-resolution {
+    font-weight: bold;
+    color: #ff4d7d;
+}
