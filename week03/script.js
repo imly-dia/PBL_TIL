@@ -51,7 +51,7 @@ function init() {
     addForm.addEventListener('submit', handleFormSubmit);
 }
 
-// 화면을 다시 그리는 함수 (데이터 -> UI)
+// 화면을 다시 그리는 함수 
 function render() {
     summaryGrid.innerHTML = '';
     detailList.innerHTML = '';
